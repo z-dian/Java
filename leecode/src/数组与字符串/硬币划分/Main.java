@@ -19,13 +19,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.close();
-
         int coins[] = {1, 2, 5, 10};
 
         count(coins, 0, n);
 
         System.out.println(numcount%(1e9+7));
-
     }
 
     public static void count(int coins[], int index, int n) {
