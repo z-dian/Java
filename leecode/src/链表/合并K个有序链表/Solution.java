@@ -12,6 +12,7 @@ import 数组与字符串.两数相加.ListNode;
   2->6
 ]
 输出: 1->1->2->3->4->4->5->6
+思路：分治法
  */
 public class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
