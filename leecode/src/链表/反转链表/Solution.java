@@ -12,6 +12,17 @@ package 链表.反转链表;
 每次迭代到cur，都将cur的next指向pre，然后pre和cur前进一位。
 都迭代完了(cur变成null了)，pre就是最后一个节点了。
  */
+
+import 数组与字符串.两数相加.ListNode;
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
 public class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
