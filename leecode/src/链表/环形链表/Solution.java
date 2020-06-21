@@ -1,6 +1,4 @@
 package 链表.环形链表;
-
-import com.sun.org.apache.regexp.internal.RE;
 import 数组与字符串.两数相加.ListNode;
 
 /*
