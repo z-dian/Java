@@ -50,5 +50,5 @@ public class MedianFinder {
             return (low.peek()+high.peek())/2.0;
         }
     }
-    
+
 }
