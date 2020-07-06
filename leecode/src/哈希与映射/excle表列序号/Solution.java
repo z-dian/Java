@@ -1,4 +1,4 @@
-package 哈希与映射.excle表格名称;
+package 哈希与映射.excle表列序号;
 
 import java.util.HashMap;
 
