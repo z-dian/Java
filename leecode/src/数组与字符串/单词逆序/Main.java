@@ -1,6 +1,5 @@
 package 数组与字符串.单词逆序;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -13,7 +12,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public void reverse(String str) {
+    /*public void reverse(String str) {
         String[] src = str.split(" ");
 
         int length = src.length;
@@ -27,12 +26,23 @@ public class Main {
             System.out.print(list.get(i) + " ");
         }
     }
+*/
+    public String ReverseSentence(String str) {
+        StringBuffer stringBuffer = new StringBuffer();
+        String[] s = str.split(" ");
+        int len = s.length;
+        for(int i = len-1;i>=0;i--){
+            stringBuffer.append(s[i]);
+        }
+        String res = stringBuffer.toString();
+        return res;
 
+    }
     public static void main(String[] args) {
         Main v = new Main();
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        v.reverse(str);
+        System.out.println(v.ReverseSentence(str));
     }
 
 }

@@ -30,44 +30,29 @@ minStack.getMin();   --> 返回 -2.
 
  */
 public class MinStack {
-    private Stack<Integer> stack;
-    private Stack<Integer> minStack;
+    Stack<Integer> stack = new Stack<>();
+    Stack<Integer> minStack = new Stack<>();
 
-    public MinStack() {
-        stack = new Stack<>();
-        minStack = new Stack<>();
-    }
-
-    public void push(int x) {
-        stack.push(x);
-        if (!minStack.isEmpty()) {
-            //取最小栈栈顶元素
-            int top = minStack.peek();
-            //如果当前元素比最小栈栈顶元素还小，则入最小栈
-            if (x <= top) {
-                minStack.push(x);
-            }
-            //否则直接入最小栈
+    public void push(int node) {
+        stack.push(node);
+        if (minStack.isEmpty()) {
+            minStack.push(node);
         } else {
-            minStack.push(x);
+            minStack.push(node <= minStack.peek() ? node : minStack.peek());
         }
     }
 
     public void pop() {
-        int pop = stack.pop();
+        stack.pop();
+        minStack.pop();
 
-        int top = minStack.peek();
-        //等于的时候再出栈
-        if(pop==top){
-            minStack.pop();
-        }
     }
 
     public int top() {
         return stack.peek();
     }
 
-    public int getMin() {
+    public int min() {
         return minStack.peek();
     }
 }

@@ -1,8 +1,5 @@
 package 搜索二维矩阵2;
 
-import javax.crypto.SealedObject;
-import java.util.Random;
-
 /*
 题目描述：
 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：
@@ -77,7 +74,7 @@ public class Solution {
         int start = 0;
         int end = nums.length - 1;
         while (start <= end) {
-            int mid = (start + end) /2;
+            int mid = (start + end) / 2;
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
