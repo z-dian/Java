@@ -28,6 +28,7 @@ package 数组与字符串.正则表达式;
  */
 public class Solution {
     /*
+    当模式中的第二个字符不是“*”时：
     1、如果字符串第一个字符和模式中的第一个字符相匹配，那么字符串和模式都后移一个字符，然后匹配剩余的。
     2、如果 字符串第一个字符和模式中的第一个字符相不匹配，直接返回false。
 
@@ -61,9 +62,9 @@ public class Solution {
         //str未到尾，pattern未到尾，若模式当前字符下一个为"*"，有三种情况：第一种匹配了0个
         if (patternIndex + 1 < pattern.length && pattern[patternIndex + 1] == '*') {
             if (pattern[patternIndex] == str[strIndex] || (pattern[patternIndex] == '.' && strIndex != str.length)) {
-                return matchMethod(str, strIndex, pattern, patternIndex + 2)//匹配0个，跳过
-                        || matchMethod(str, strIndex + 1, pattern, patternIndex + 1)//*匹配了1个跳过
-                        || matchMethod(str, strIndex + 1, pattern, patternIndex);//*匹配了一个，再匹配str的下一个
+                return matchMethod(str, strIndex, pattern, patternIndex + 2)//匹配1个
+                        //|| matchMethod(str, strIndex + 1, pattern, patternIndex + 2)//*匹配了1个
+                        || matchMethod(str, strIndex + 1, pattern, patternIndex);//字符串后移1字符，模式不变，即继续匹配字符下一位，因为*可以匹配多位；
             } else {
                 //直接跳过*（*匹配了0个）
                 return matchMethod(str, strIndex, pattern, patternIndex + 2);
