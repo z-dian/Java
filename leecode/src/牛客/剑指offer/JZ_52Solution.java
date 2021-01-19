@@ -27,6 +27,7 @@ public class JZ_52Solution {
         int strIndex = 0;
         int patternIndex = 0;
         return matchMethod(str, pattern, strIndex, patternIndex);
+
     }
 
     private boolean matchMethod(char[] str, char[] pattern, int strIndex, int patternIndex) {

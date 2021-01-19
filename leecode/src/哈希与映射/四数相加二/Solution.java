@@ -35,7 +35,8 @@ public class Solution {
     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int count = 0;
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 0; i < A.length; i++)
+        {
             for (int j = 0; j < B.length; j++) {
                 int sumAB = A[i] + B[j];
                 map.put(sumAB, map.getOrDefault(sumAB, 0) + 1);

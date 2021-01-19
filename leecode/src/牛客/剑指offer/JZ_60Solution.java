@@ -3,7 +3,6 @@ package 牛客.剑指offer;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * @description 把二叉树打印成多行
