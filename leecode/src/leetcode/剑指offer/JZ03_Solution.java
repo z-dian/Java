@@ -15,7 +15,7 @@ public class JZ03_Solution {
         if(nums.length==0){
             return -1;
         }
-        Arrays.sort(nums);
+        Arrays.QuickSort(nums);
         int i = 0;
         for(int j = 1;j<nums.length;j++){
             if(nums[i++]==nums[j]){
@@ -41,7 +41,7 @@ public class JZ03_Solution {
         return -1;
     }*/
 
-    //原地置换方法
+    //原地置换方法（萝卜坑问题）
     public int findRepeatNumber(int[] nums) {
         int i=0;
         while (i<nums.length){

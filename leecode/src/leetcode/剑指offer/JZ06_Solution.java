@@ -3,7 +3,7 @@ package leetcode.剑指offer;
 
 /**
  * @author 张点
- * @description 从头到尾打印链表
+ * @description 从尾到头打印链表
  * @date 2020/10/11 14:04
  **/
 public class JZ06_Solution {

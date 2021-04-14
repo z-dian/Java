@@ -9,7 +9,7 @@ import java.util.Arrays;
  **/
 public class JZ11_Solution {
     /*public int minArray(int[] numbers) {
-        Arrays.sort(numbers);
+        Arrays.QuickSort(numbers);
         return numbers[0];
     }*/
     public int minArray(int[] numbers) {

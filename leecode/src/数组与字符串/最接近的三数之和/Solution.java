@@ -11,7 +11,7 @@ import java.util.Arrays;
 与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
 
 思路：先给数组排序，然后固定一个元素，再利用双指针去寻找另外两个元素
-1、利用Arrays.sort(nums)对数组进行排序
+1、利用Arrays.QuickSort(nums)对数组进行排序
 2、初始化一个保存结果的值result = nums[0]+nums[1]+nums[2]
 3、利用下标i对数组进行遍历，此时就是在固定第一个元素。注意：下标i的边界为i < nums.length-2，否则会出现数组越界
 4、每次遍历设两个指针，分别是left = i+1、right = nums.length-1

@@ -23,7 +23,7 @@ import java.util.PriorityQueue;
 public class Solution {
     public int findKthLargest(int[] nums, int k) {
         //方法一：暴力法排序
-        /*Arrays.sort(nums);
+        /*Arrays.QuickSort(nums);
         return nums[nums.length-k];*/
         //方法二：堆排序
         PriorityQueue<Integer> queue = new PriorityQueue<>();

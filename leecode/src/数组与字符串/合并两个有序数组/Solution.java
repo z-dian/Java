@@ -29,7 +29,7 @@ public class Solution {
                 nums1[i++] = nums2[j];
             }
         }
-        Arrays.sort(nums1);
+        Arrays.QuickSort(nums1);
     }*/
     /*
     双指针：p指向nums1最后面，p1指向nums1的最后一位非零元素，p2指向nums2的最后一位元素

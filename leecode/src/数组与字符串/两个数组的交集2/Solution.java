@@ -51,8 +51,8 @@ public class Solution {
             如果不等，则移动小的那个指针。
     */
      /*public int[] intersect(int[] nums1, int[] nums2) {
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
+        Arrays.QuickSort(nums1);
+        Arrays.QuickSort(nums2);
         List<Integer> list = new ArrayList<>();
         int p1 = 0, p2 = 0;
         while(p1 < nums1.length && p2 < nums2.length) {

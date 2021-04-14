@@ -13,7 +13,7 @@ public class Solution {
 
    /* public static int Minimumdays(int n, int[] DEF) {
         // write code here
-        Arrays.sort(DEF);
+        Arrays.QuickSort(DEF);
         int day = 0;
         for(int i = 0;i<n;i++){
             //如果防御值大于天数day的话就让天数day=防御值,也就是说第i天才可以杀死这个怪

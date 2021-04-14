@@ -1,5 +1,4 @@
 package leetcode.Top100;
-
 public class ListNode {
     int val;
     ListNode next;

@@ -13,7 +13,7 @@ import java.util.Queue;
 public class JZ40_Solution {
     //直接sort
     /*public int[] getLeastNumbers(int[] arr, int k) {
-        Arrays.sort(arr);
+        Arrays.QuickSort(arr);
         int[] res = new int[k];
         for (int i = 0; i < k; i++) {
             res[i] = arr[i];
